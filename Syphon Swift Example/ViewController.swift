@@ -52,10 +52,11 @@ class ViewController: NSViewController {
     func screenRefreshForTime(_ timestamp: CVTimeStamp) {
         let itemTime = videoOutput.itemTime(for: timestamp)
         
-        guard videoOutput.hasNewPixelBuffer(forItemTime: itemTime),
+        guard
+            videoOutput.hasNewPixelBuffer(forItemTime: itemTime),
             let pixelBuffer = videoOutput.copyPixelBuffer(forItemTime: itemTime, itemTimeForDisplay: nil),
             let textureCache = textureCache
-            else { return }
+        else { return }
         
         var videoTexture: CVMetalTexture?
         let width = CVPixelBufferGetWidth(pixelBuffer)
@@ -65,9 +66,19 @@ class ViewController: NSViewController {
             CVMetalTextureCacheCreateTextureFromImage(nil, textureCache, pixelBuffer, nil, .bgra8Unorm, width, height, 0, &videoTexture) == kCVReturnSuccess,
             let newVideoTexture = videoTexture,
             let texture = CVMetalTextureGetTexture(newVideoTexture)
-            else { return }
+        else { return }
         
-        syphonServer?.publishFrameTexture(texture)
+        // Metal 커맨드 큐 및 커맨드 버퍼 생성
+        guard let commandQueue = device.makeCommandQueue(),
+              let commandBuffer = commandQueue.makeCommandBuffer() else { return }
+        
+        // Syphon 텍스처를 게시
+        let imageRegion = NSRect(x: 0, y: 0, width: width, height: height)
+        syphonServer?.publishFrameTexture(texture, on: commandBuffer, imageRegion: imageRegion, flipped: true)
+        
+        // 커맨드 버퍼 실행
+        commandBuffer.commit()
+        commandBuffer.waitUntilCompleted()
     }
     
     @IBAction func rewind(_ sender: AnyObject) {

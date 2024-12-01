@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DACF8302CFD204B00CB5E96 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DACF82F2CFD204B00CB5E96 /* Syphon.framework */; };
+		0DACF8312CFD204B00CB5E96 /* Syphon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DACF82F2CFD204B00CB5E96 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A53624FD1C518E3D00A0AB61 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = A53624FC1C518E3D00A0AB61 /* video.mov */; };
-		A57D778E242FFDA20048AE21 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57D778C242FFD9A0048AE21 /* Syphon.framework */; };
-		A57D778F242FFDA20048AE21 /* Syphon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A57D778C242FFD9A0048AE21 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A590FDF01C51775B000BED4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590FDEF1C51775B000BED4A /* AppDelegate.swift */; };
 		A590FDF21C51775B000BED4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590FDF11C51775B000BED4A /* ViewController.swift */; };
 		A590FDF41C51775B000BED4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A590FDF31C51775B000BED4A /* Assets.xcassets */; };
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A57D778F242FFDA20048AE21 /* Syphon.framework in Embed Frameworks */,
+				0DACF8312CFD204B00CB5E96 /* Syphon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,8 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DACF82F2CFD204B00CB5E96 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
 		A53624FC1C518E3D00A0AB61 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video.mov; path = ../video.mov; sourceTree = "<group>"; };
-		A57D778C242FFD9A0048AE21 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
 		A590FDEC1C51775B000BED4A /* Syphon Swift Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Syphon Swift Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A590FDEF1C51775B000BED4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A590FDF11C51775B000BED4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,19 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57D778E242FFDA20048AE21 /* Syphon.framework in Frameworks */,
+				0DACF8302CFD204B00CB5E96 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DACF82B2CFD1E6500CB5E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DACF82F2CFD204B00CB5E96 /* Syphon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A590FDE31C51775B000BED4A = {
 			isa = PBXGroup;
 			children = (
 				A590FDEE1C51775B000BED4A /* Syphon Swift Example */,
+				0DACF82B2CFD1E6500CB5E96 /* Frameworks */,
 				A590FDED1C51775B000BED4A /* Products */,
-				A57D778C242FFD9A0048AE21 /* Syphon.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,6 +294,7 @@
 				);
 				INFOPLIST_FILE = "Syphon Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SyphonSwiftExample;
 				PRODUCT_NAME = "Syphon Swift Example";
 				SWIFT_VERSION = 5.0;
@@ -303,6 +312,7 @@
 				);
 				INFOPLIST_FILE = "Syphon Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SyphonSwiftExample;
 				PRODUCT_NAME = "Syphon Swift Example";
 				SWIFT_VERSION = 5.0;

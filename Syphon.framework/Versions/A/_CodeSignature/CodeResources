@@ -6,7 +6,11 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		NJQWaUpzxKukSdKDjDnNADB2FyU=
+		JbUpAJ4XDEpvnKKOUbVNYHGe7YM=
+		</data>
+		<key>Resources/default.metallib</key>
+		<data>
+		BrDkbWk2KCvWCnNM4YHzY8WFNjY=
 		</data>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -22,142 +26,125 @@
 	<dict>
 		<key>Headers/Syphon.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Vw1+dzlTu1raXA1isNuxCKJAYSg=
-			</data>
 			<key>hash2</key>
 			<data>
-			83mxFOK8bHVd1t5kaBmtCUeInsT5kMoHVbEu+ibY0r0=
+			ut8Rm2z0zGWcHvB/h8TGi+7b6edAGB9SVkBVnG8JddY=
 			</data>
 		</dict>
 		<key>Headers/SyphonClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zVg1x6Zi1TVou35OT1kQSkrj8oo=
-			</data>
 			<key>hash2</key>
 			<data>
-			3Ra9mR02XBdpvL3gVlu8eSoGmXE6prpAjROKc/tZWOo=
+			CXLWpC7I4+uJRJfpY2bqLIBeLla+V1m8RP0VMqRq5xo=
 			</data>
 		</dict>
 		<key>Headers/SyphonClientBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gwgD6GzRFnu9TuvTmGEHf9cMoEw=
-			</data>
 			<key>hash2</key>
 			<data>
-			/mLoUwvPbwGPMDOTEZsgaV7SffKOhky9H+wCBHYEhKU=
+			3gL3bBGg9UgPiqeGGi69LcxA74EFvnOyRDhVOjAqfU8=
 			</data>
 		</dict>
 		<key>Headers/SyphonImage.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6REJfLqwoXBoAxMRul5/tWAJzZQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			D8RM3nk+K0Ha/hWvrAHlWAnCqDf+a5ywLctWC/+bbjM=
+			VfvxpbjDwhm+xVN9SrvQWa9UNBwyTNIfKqjVJ0ILUmM=
 			</data>
 		</dict>
 		<key>Headers/SyphonImageBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			avyGLPPpYAHdFwbFRayeJZdNWQM=
-			</data>
 			<key>hash2</key>
 			<data>
-			Zjd3optVbmzNHsDWkdibwAeZldL30pzPcEoqePA6lbk=
+			GY/Jn62iuRHpkO6e8A/rsWCJfSm6aMWd00K4myeMZBM=
 			</data>
 		</dict>
 		<key>Headers/SyphonMetalClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XAY5uyzzl4YDRd2IP8yM1K2VwJk=
-			</data>
 			<key>hash2</key>
 			<data>
-			N17UmhCM/lBR5SlavvLOvpWfTObDILw1fvdDsjdHMuE=
+			xM+qPGYKvRgZHB9je7qep+GiD577lOGNGw3qmxtGPj8=
 			</data>
 		</dict>
 		<key>Headers/SyphonMetalServer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JEx49HblRQ/gv1sI1NpgXsCNyKI=
-			</data>
 			<key>hash2</key>
 			<data>
-			nUS5LH6qKgPEpaBsYIkdEYUR9tFNSmyRiGmnwAQaCFA=
+			izsmNjGV3axQRMWbsAaGcB/n/5HWBzOY2BvYY8QGyAU=
+			</data>
+		</dict>
+		<key>Headers/SyphonOpenGLClient.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			35RXj7wesL4MU1FfBdN9/uujWmDKqnVfTmv1aEORvcY=
+			</data>
+		</dict>
+		<key>Headers/SyphonOpenGLImage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rFyLg5sFJ1FSPOWsrA1ogtJsrBCJxsW9xYMA/swUSno=
+			</data>
+		</dict>
+		<key>Headers/SyphonOpenGLServer.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZbEfiEHzk5SzCxBeEHNCUkfeKYL+HxhzKtZYExTkfGQ=
 			</data>
 		</dict>
 		<key>Headers/SyphonServer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gZ6ykvbnHK43xtLdVovDNwu8KCc=
-			</data>
 			<key>hash2</key>
 			<data>
-			rWRiMlszSu29jhCVhkppTJ3w0jfu9TO9e5n/mHkafbU=
+			bnTZB1gxZzROc9I62/6orFopKpzZLWuTDPXPhMJDBD8=
 			</data>
 		</dict>
 		<key>Headers/SyphonServerBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ud/yD7hnjYvpu+KyPefjRim4jZM=
-			</data>
 			<key>hash2</key>
 			<data>
-			OSUWmTHycabiEvYzM45L8BXG9Tervskf1Pk94M3/ZF4=
+			+aLvZiQEGiO0ltZUpi3age7wcGfX7A7sGmo2Yz0BCG0=
 			</data>
 		</dict>
 		<key>Headers/SyphonServerDirectory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c8MO3TcUfbbJZEOyEuuQGnILNfU=
-			</data>
 			<key>hash2</key>
 			<data>
-			ViScH4K+9OUYCesg0TrpvUHnXNHYHof8N2sBJFLtzZ4=
+			bODRqLi0K9qDLxr8QjK7DMkr8WKXJItwRuF1QBQV5+0=
+			</data>
+		</dict>
+		<key>Headers/SyphonSubclassing.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C5xu+I8eCZH8RCchUXmKOhxixHn20Sa1CXmtFRmCqwc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uWM4ZmTJ+clnyRZX1QoR78hXWSw=
-			</data>
 			<key>hash2</key>
 			<data>
-			7FJ3MqFmGPI91bXHy4kh2iKBvNWLf3jEajudiV/z4qo=
+			zmy147RAJPAPxydGlzn6TQ4ZXK60434t9pOn2uwW8TQ=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NJQWaUpzxKukSdKDjDnNADB2FyU=
-			</data>
 			<key>hash2</key>
 			<data>
-			aMkRmKNYDLCsImkYxH1XFEQpetQB5lY8iK19LiRrvls=
+			CdOYDAwpxMBu4KRB/Jy/H4+QmYfiL1KfHQ9IugIs2jo=
+			</data>
+		</dict>
+		<key>Resources/default.metallib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l5Bw8VFYDKqRMWNyqrwvH5czoFYKGSGfqWdvQRuwoXw=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MiLKDDnrUKr4EmuvhS5VQwxHGK8=
-			</data>
 			<key>hash2</key>
 			<data>
 			Oc8u4Ht7Mz58F50L9NeYpbcq9qTlhPUeZCcDu/pPyCg=
